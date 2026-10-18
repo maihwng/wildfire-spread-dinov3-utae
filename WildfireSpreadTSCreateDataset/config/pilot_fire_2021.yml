@@ -1,0 +1,9 @@
+output_drive_folder: WildfirePilot_2021
+rectangular_size: 0.5
+year: 2021
+
+fire_25295804:
+  latitude: 48.77014089069005
+  longitude: -114.451773567814
+  start: 2021-07-19
+  end: 2021-08-04

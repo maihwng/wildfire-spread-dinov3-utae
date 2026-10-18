@@ -1,0 +1,18 @@
+﻿--extra-index-url https://download.pytorch.org/whl/cpu
+streamlit
+torch==2.6.0+cpu
+torchvision==0.21.0+cpu
+numpy<2
+matplotlib
+rasterio
+h5py
+pandas
+scipy
+scikit-learn
+einops
+tqdm
+xarray
+imageio
+pyyaml
+hydra-core
+omegaconf
