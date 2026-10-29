@@ -289,8 +289,15 @@ In wildfire remote sensing, burned pixels often account for $< 2\%$ of the spati
    Directly optimizes region overlap (Dice / F1-score) to prevent fragmented perimeter predictions.
 
 3. **Combined Loss (`CombinedLoss`)**:
-   $$\mathcal{L}_{\text{Combined}} = w_{\text{focal}} \cdot \mathcal{L}_{\text{Focal}} + w_{\text{dice}} \cdot \mathcal{L}_{\text{Dice}}$$
-   Balances pixel-level boundary discrimination (Focal) with region-level overlap (Dice). Default weights: $w_{\text{focal}} = 1.0, w_{\text{dice}} = 1.0$.
+  **Combined Loss Function**
+
+```math
+\mathcal{L}_{\mathrm{Combined}} = w_{\mathrm{focal}} \cdot \mathcal{L}_{\mathrm{Focal}} + w_{\mathrm{dice}} \cdot \mathcal{L}_{\mathrm{Dice}}
+```
+
+This combines pixel-level discrimination (Focal Loss) with region-level overlap (Dice Loss).
+
+Default weights: $w_{\mathrm{focal}} = 1.0$ and $w_{\mathrm{dice}} = 1.0$.
 
 4. **Soft Jaccard Loss (`JaccardLoss`)**: Optimizes the Intersection-over-Union (IoU) metric directly.
 
